@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    padding: 0 2rem;
+    background-color: #910298;
+    background-image: url("https://transparenttextures.com/patterns/black-scales.png");
+    color: black;
+}
+
+nav .line{
+    position: relative;
+    width: 3px;
+    height: 60px;
+    background: white;
+    left: 15px;
+}
+
+header img{
+    width: 245px;
+    height: 65px;
+}
+
+
+header nav {
+    position: relative;
+    left: 250px;
+    display: flex;
+}
+
+header nav div a{
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    color: white;
+    padding-right: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav div p{
+    position: relative;
+    padding-top: 5px;
+    font-size: 1rem;
+    left: 30px;
+    color: rgb(231, 229, 229);
+    font-weight: 400;
+    font-style: italic;
+}
+
+header nav div a:hover{
+    color: rgb(241, 207, 11);
+    transition: 1s;
+}
+
+.header-signup{
+    visibility: hidden;
+    opacity: 0;
+}
+
+header .nav-btn{
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+    margin-right: 80px;
+}
+
+/* HOME */
+.home-container .definition {
+    display: flex;
+    margin: auto;
+    width: 65rem;
+    margin-top: 80px;
+    margin-bottom: 8rem;
+}
+
+.home-container .definition .definition-1{
+    margin-right: 5rem;
+}
+
+.home-container .definition .definition-1 h3{
+    color: #910298;
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+}
+
+.home-container .definition .definition-1 p{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.home-container .definition .definition-2 h3{
+    color: #910298;
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+}
+
+.home-container .definition .definition-2 p{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.home-benefit-container{
+    margin-bottom: 50px;
+}
+
+.home-container .home-benefit {
+    display: flex;
+    margin: auto;
+    width: 65rem;
+    justify-content: space-between;
+}
+
+.home-container .home-benefit div p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+.home-container .home-benefit div ul{
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.home-container .home-benefit div ul li{
+    color: #910298;
+}
+
+.home-container .home-benefit div ul li::marker{
+    color: #59035e;
+    font-size: 1.2rem;
+}
+
+.home-container .home-benefit img{
+    width: 500px;
+    border-radius: .5rem;
+    box-shadow: 0px 1px 6px 0px #537473;
+}
+
+.home-container .definition-container {
+    width: 80rem;
+    margin: auto;
+    background-color: #e5e9e3;
+    text-align: center;
+}
+
+.home-container .definition-container h4{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.home-container .definition-container p{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1.2rem;
+}
+
+.home-container .definition-container p:last-child{
+    padding-bottom: 1.5rem;
+}
+
+.home-container .notice-container{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    color: #910298;
+
+    padding-bottom: 50px;
+}
+
+.home-container .notice-container button{
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #af25b6;
+}
+
+.home-container .notice-container button:hover{
+    background-color: rgb(211, 213, 214);
+    transition: 1s;
+}
+
+.home-container .notice-container button a{
+    font-size: .8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.home-container .notice-container a:hover{
+    color: #af25b6;
+    transition: 1s;
+}
+
+.notice-blue{
+    color: blue;
+}
+
+/* FOOTER */
+
+.footer-social-icons-item{
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+.footer .footer-logo{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background-color: #537473;
+    padding: 5rem 12rem;
+}
+
+.footer .footer-logo img{
+    width: 406px;
+    height: 406px;
+    margin: auto;
+}
+
+.footer .footer-logo h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+    padding-top: 2rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 2.5rem 7rem;
+    margin-left: 12em;
+}
+
+.footer-grid div h3{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: .2rem;
+}
+
+.footer-grid div ul {
+    padding-bottom: .5rem;
+}
+
+.footer-grid div ul li {
+    padding-bottom: .3rem;
+    list-style-type: none;
+}
+
+.footer-grid div ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.footer-grid div ul li .footer-color-purple{
+    color: #910298;
+}
+
+.footer-grid .footer-uniben{
+    align-items: center;
+    text-align: center;
+}
+
+.footer-grid .footer-uniben div img{
+    width: 130px;
+    height: 130px;
+}
+
+.footer-grid .footer-uniben h2{
+    color: #910298;
+    font-size: 1.3rem;
+}
+
+.footer-grid .footer-uniben h4{
+    color: #910298;
+    font-size: 1.1rem;
+    padding-bottom: .2rem;
+}
+
+.footer-grid .footer-uniben p{
+    color: white;
+    padding: .2rem;
+    width: 195px;
+    margin: auto;
+    background-color: #910298;
+    font-size: 1.1rem;
+}
+
+.footer-grid div .footer-icons li a .footer-social-icons{
+    font-size: 2.8rem;
+    padding-bottom: .7rem;
+    color: #910298;
+    margin-left: 5rem;
+}
+
+.footer-copyright{
+    background-color: rgb(31, 30, 30);
+    color: rgb(189, 185, 185);
+    text-align: center;
+    padding: .5rem;
+    font-weight: 300;
+}
+
+
+@media only screen and (max-width: 1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header-signup{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 1.5rem;
+        background-color: rgb(25, 25, 26);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    header .responsive_nav{
+        transform: none;
+        height: 40rem;
+    }
+
+    header nav .nav-close-btn{
+        position: absolute;
+        top: 2.6rem;
+        right: 2rem;
+        background: rgb(25, 25, 26);
+    }
+
+    header nav div a {
+        font-size: 1.5rem;
+    }
+
+    nav .line{
+        visibility: hidden;
+        position: none;
+        width: 0px;
+        height: 0px;
+        background: none;
+        left: 0px;
+    }
+
+    header nav div p{
+        visibility: hidden;
+        position: relative;
+        padding-top: 0px;
+        font-size: 0rem;
+        left: 0px;
+        color: none;
+        font-weight: 0;
+        font-style: italic;
+    }
+
+
+    /* HOME */
+.home-container .definition {
+    flex-direction: column;
+    width: 40rem;
+}
+
+.home-container .definition .definition-1{
+    margin-right: 0rem;
+}
+
+.home-container .definition .definition-1 p{
+    padding-bottom: 5rem;
+}
+
+.home-container .home-benefit {
+    display: flex;
+    margin: auto;
+    width: 40rem;
+    justify-content: space-between;
+}
+
+.home-container .home-benefit div p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+.home-container .home-benefit div ul{
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.home-container .home-benefit div ul li{
+    line-height: 1.2;
+}
+
+.home-container .home-benefit img{
+    width: 400px;
+    height: 245px;
+}
+
+.home-container .definition-container {
+    width: 40rem;
+    margin: auto;
+    background-color: #e5e9e3;
+    text-align: center;
+}
+
+    /* FOOTER */
+
+    .footer .footer-logo img{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .footer .footer-logo h3{
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: white;
+        padding-top: 2rem;
+    }
+
+    .footer-grid{
+        padding: 2.5rem 1rem;
+        margin-left: 5em;
+    }
+
+    .footer-grid div h3{
+        font-size: 1.2rem;
+    }
+    
+    .footer-grid div ul li a{
+        font-size: 1rem;
+    }
+    
+    .footer-grid .footer-uniben div img{
+        width: 110px;
+        height: 110px;
+    }
+    
+    .footer-grid .footer-uniben h2{
+        font-size: 1rem;
+    }
+    
+    .footer-grid .footer-uniben h4{
+        font-size: .9rem;
+    }
+    
+    .footer-grid .footer-uniben p{
+        width: 155px;
+        font-size: .8rem;
+    }
+    
+    .footer-grid div .footer-icons li a .footer-social-icons{
+        font-size: 2.4rem;
+        padding-bottom: .8rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header img{
+        width: 150px;
+        height: 40px;
+        margin-right: 100px;
+    }
+
+        /* HOME */
+.home-container .definition {
+    flex-direction: column;
+    width: 18rem;
+}
+
+.home-container .home-benefit {
+    display: flex;
+    flex-direction: column;
+    margin-left: -5rem;
+}
+
+.home-container .home-benefit div{
+    margin: auto;
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+}
+
+.home-container .home-benefit img{
+    margin: auto;
+    width: 400px;
+    height: 245px;
+}
+
+.home-container .definition-container {
+    width: 20rem;
+    margin: auto;
+    background-color: #e5e9e3;
+    text-align: center;
+}
+
+.home-container .definition-container p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+}
+
+        /* FOOTER */
+
+        .footer .footer-logo{
+            padding: 1.2rem 2rem;
+        }
+        .footer .footer-logo img{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+    
+        .footer .footer-logo h3{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: white;
+            padding-top: 2rem;
+        }
+
+        .footer-grid{
+            text-align: center;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: .5rem;
+            row-gap: .5rem;
+            padding: .8rem 2rem;
+        }
+
+        .footer-grid .footer-uniben div img{
+            visibility: hidden;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .footer-grid .footer-uniben h2{
+            visibility: hidden;
+            font-size: 0rem;
+        }
+        
+        .footer-grid .footer-uniben h4{
+            visibility: hidden;
+            font-size: 0rem;
+        }
+        
+        .footer-grid .footer-uniben p{
+            visibility: hidden;
+            width: 0px;
+            font-size: 0rem;
+        }
+        .footer-grid div .footer-icons li a .footer-social-icons{
+            visibility: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer .footer-grid-item{
+            text-align: center;
+            margin-top: -8rem;
+        }
+        .footer-social-icons-item{
+            font-size: 25px;
+            color: #910298;
+            margin-right: 2px;
+            margin-left: 2px;
+            visibility: visible;
+        }
+
+        .footer-copyright{
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background-color: rgb(31, 30, 30);
+            color: rgb(189, 185, 185);
+            text-align: center;
+            padding: .5rem;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+}
